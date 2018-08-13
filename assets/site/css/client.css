@@ -1,0 +1,84 @@
+
+ #flexiselDemo3 {
+    display:none;
+}
+.client-inner .nbs-flexisel-container {
+    max-width:100%;
+}
+.client-inner .nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    text-align:center;
+}
+.client-inner .nbs-flexisel-inner {
+    overflow:hidden;
+    width:100%;
+}
+.client-inner .nbs-flexisel-item {
+    float:left;
+    margin:0px ;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.client-inner .nbs-flexisel-item img {
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:170px;
+}
+.client-inner .nbs-flexisel-nav-left,
+.client-inner .nbs-flexisel-nav-right {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    border-radius:50%;
+    border:2px solid #fff;
+}
+.client-inner .nbs-flexisel-nav-left:hover {
+    cursor: pointer;
+    opacity:.5;
+}
+.client-inner .nbs-flexisel-nav-right {
+	background: rgba(0, 0, 0, 0) url("../img/interface/next.png") no-repeat scroll 0 0;
+	right: 2%;
+	top: 50% !important;
+    background-position:center;
+}
+.client-inner .nbs-flexisel-nav-left {
+	left: 2%;
+	top: 50% !important;
+	background: url(../img/interface/previous.png) no-repeat;
+    background-position:center;
+}
+.client-inner .nbs-flexisel-nav-right:hover {
+    cursor: pointer;
+    opacity:.5;
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .nbs-flexisel-nav-left{
+        left: 5px;
+    }
+    .nbs-flexisel-nav-right{
+        right: 5px;
+    }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .nbs-flexisel-nav-left{
+        left: 5px;
+    }
+    .nbs-flexisel-nav-right{
+        right: 5px;
+    }
+
+}
